@@ -26,6 +26,6 @@ While the system should never abort trying to reconcile the config, after 1 minu
   * Point is not writable
   * Requested value is out of the operating bounds of the point
   * `etag` field in the config doesn't match the current state `etag`
-failure -- The system failed to apply the cloud value to the point because an error occurred on the device side.
+* failure -- The system failed to apply the cloud value to the point because an error occurred on the device side.
 
 In the case of any of the error states (failure, invalid, overridden), the [status](/docs/status.md) field for the point should be populated to provide additional debugging information about the error.
